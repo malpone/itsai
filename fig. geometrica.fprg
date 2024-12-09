@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fig. geometrica"/>
+        <attribute name="authors" value="ITS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-09 09:20:45 "/>
+        <attribute name="created" value="SVRTO0lUUy1QMDg7MjAyNC0xMi0wNjsiMDE6NDE6MzkgIjsxODk5"/>
+        <attribute name="edited" value="SVRTO0lUUy1QMDg7MjAyNC0xMi0wNjsiMDE6NTc6MzIgIjsxOzIwMDc="/>
+        <attribute name="edited" value="SVRTO0lUUy1QMTA7MjAyNC0xMi0wOTsiMDk6MjA6NDUgIjsxOzIwMDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="input" type="Real" array="False" size=""/>
+            <output expression="&quot;quanti lati ha la figura geometrica?&quot;" newline="True"/>
+            <input variable="input"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <if expression="input&gt;2">
+                <then>
+                    <for variable="i" start="1" end="input" direction="inc" step="1">
+                        <forward expression="200" pen="down"/>
+                        <turn expression="360/input" rotate="right"/>
+                    </for>
+                </then>
+                <else>
+                    <output expression="&quot;non &#232; possibile creare una figura geometrica&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
