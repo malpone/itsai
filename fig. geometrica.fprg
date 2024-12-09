@@ -19,7 +19,7 @@
             <if expression="input&gt;2">
                 <then>
                     <for variable="i" start="1" end="input" direction="inc" step="1">
-                        <forward expression="200" pen="down"/>
+                        <forward expression="100" pen="down"/>
                         <turn expression="360/input" rotate="right"/>
                     </for>
                 </then>
